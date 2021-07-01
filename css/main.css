@@ -82,7 +82,7 @@ body {
  * -------------------------------------------------------------------
  */
 a, a:visited {
-	color: #000000;
+	color: white;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -90,7 +90,7 @@ a, a:visited {
 	transition: all 0.3s ease-in-out;
 }
 a:hover, a:focus, a:active {
-	color: #FF0077;
+	color: white;
 	outline: 0;
 }
 
@@ -279,7 +279,7 @@ ul {
 	list-style: disc;
 }
 li {
-	display: list-item;
+	display: list-item; /*The element generates a block box for the content and a separate list-item inline box.*/
 }
 ol, ul {
 	margin-left: 1.7rem;
@@ -1882,3 +1882,61 @@ footer .copyright span:last-child::after {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/***************** login part ***************/ 
+/* Full-width input fields */
+input[type=text], input[type=password] {
+	width: 20%;
+	padding: 12px 20px;
+	margin-bottom: 5%;
+	margin-left: 40%;
+	display: block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+  .submit
+  {
+	  display: block;
+  }
+  label
+  {
+	  color: white;
+  }
+  .container {
+	padding: 16px;
+  }
+  .font
+  {
+	font-family: "poppins-semibold", sans-serif;
+  }
+  a
+  {
+	  color: white;
+	  padding-right: 3%;
+  }
+  b
+  {
+	font-family: "poppins-semibold", sans-serif;
+  }
+
+  /* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	padding-top: 60px;
+  }
+  .modal-content {
+	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	width: 100%; /* Could be more or less, depending on screen size */
+	height: 60%;
+  }
+  
+  
